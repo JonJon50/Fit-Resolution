@@ -81,7 +81,28 @@ confirmAnswer(answer);
 )
 
 
+// function addCity(){
+//   fetch('https://www.google.com/maps/search/?AIzaSyD7rYxTk62ICY-DiZAbLMVTzJZgPiWQ0YI=1')
+//     .then(function (response) {
+//       return response.json();
+//       console.log("123");
+//     })
     
+  
+    // };
+  
+      const options = {
+          method: 'GET',
+          headers: {
+              'X-RapidAPI-Key': 'dfbd975756msh5c34e78571a6059p156249jsne62ed8b440fa',
+              'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
+          }
+      };
+      
+      fetch('https://exercisedb.p.rapidapi.com/exercises', options)
+          .then(response => response.json())
+          .then(response => console.log(response))
+          .catch(err => console.error(err));
 
 
 
