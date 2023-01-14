@@ -109,7 +109,8 @@ confirmAnswer(answer);
    // added nav bar button eventlistener to about-home-contact
            buttonAbout.addEventListener('click', function () {
            mainSection.classList.add("is-hidden") 
-           aboutSection.classList.remove("is-hidden") 
+           aboutSection.classList.remove("is-hidden")
+           questionsArea.classList.add("is-hidden") 
       })
 
            buttonContact.addEventListener('click', function () {
