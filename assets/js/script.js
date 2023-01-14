@@ -41,7 +41,7 @@ let questions = [
     answer2: "The body achieves what the mind believes - Unknown",
     },
     {
-question: "Which of the following would you be most interested in trying?",
+question: "which of the following would you be most interested in trying?",
 answer1: "Mobility, flexibility and alternative workouts",
 answer2: "Endurance & weight lifting",
     }
@@ -85,6 +85,14 @@ confirmAnswer(answer);
 )
 
 
+// function addCity(){
+//   fetch('https://www.google.com/maps/search/?AIzaSyD7rYxTk62ICY-DiZAbLMVTzJZgPiWQ0YI=1')
+//     .then(function (response) {
+//       return response.json();
+//       console.log("123");
+//     })
+    
+  // };
       const options = {
           method: 'GET',
           headers: {
@@ -116,6 +124,7 @@ confirmAnswer(answer);
            buttonHome.addEventListener('click', function () {
            paragraphSection.classList.remove("is-hidden") 
       })   
+
 
      
 
