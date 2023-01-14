@@ -5,8 +5,12 @@ let questionsText = document.querySelector(".questions-area")
 let answerTextOne = document.querySelector(".answer-area1")
 let answerTextTwo = document.querySelector(".answer-area2")
 let answerBtn = document.querySelector(".answer")
-
-
+let buttonAbout = document.querySelector(".about")
+let aboutSection= document.querySelector(".para")
+let buttonContact = document.querySelector(".contact")
+let contactSection= document.querySelector(".footer")
+let homeSection= document.querySelector(".home")
+let paragraphSection= document.querySelector(".title")
 
 let questionsIndex = 0;
 
@@ -37,7 +41,7 @@ let questions = [
     answer2: "The body achieves what the mind believes - Unknown",
     },
     {
-question: "Which of the following would you be most interested in trying?",
+question: "which of the following would you be most interested in trying?",
 answer1: "Mobility, flexibility and alternative workouts",
 answer2: "Endurance & weight lifting",
     }
@@ -80,6 +84,15 @@ confirmAnswer(answer);
 }
 )
 
+
+// function addCity(){
+//   fetch('https://www.google.com/maps/search/?AIzaSyD7rYxTk62ICY-DiZAbLMVTzJZgPiWQ0YI=1')
+//     .then(function (response) {
+//       return response.json();
+//       console.log("123");
+//     })
+    
+  // };
       const options = {
           method: 'GET',
           headers: {
@@ -93,7 +106,25 @@ confirmAnswer(answer);
           .then(response => console.log(response))
           .catch(err => console.error(err));
 
+   // added nav bar button eventlistener to about-home-contact
+           buttonAbout.addEventListener('click', function () {
+           mainSection.classList.add("is-hidden") 
+           aboutSection.classList.remove("is-hidden")
+           questionsArea.classList.add("is-hidden") 
+      })
+
+           buttonContact.addEventListener('click', function () {
+           mainSection.classList.add("is-hidden") 
+           contactSection.classList.remove("is-hidden") 
+      })
+
+           buttonHome.addEventListener('click', function () {
+           mainSection.classList.remove("is-hidden") 
+      })   
+           buttonHome.addEventListener('click', function () {
+           paragraphSection.classList.remove("is-hidden") 
+      })   
 
 
-
+     
 
