@@ -38,6 +38,8 @@ function gMap(lat, long) {
   });
 }
 
+
+
 document.querySelector(".citySearch").addEventListener("click", (e) => {
   let city = document.getElementById("city").value;
   console.log(city);

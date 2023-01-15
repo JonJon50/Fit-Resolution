@@ -4,7 +4,18 @@ let questionsArea = document.querySelector(".questions-box");
 let questionsText = document.querySelector(".questions-area");
 let answerTextOne = document.querySelector(".answer-area1");
 let answerTextTwo = document.querySelector(".answer-area2");
-let answerBtn = document.querySelector(".answer");
+let answerBtn = document.querySelectorAll(".answer");
+let buttonAbout = document.querySelector(".about");
+let aboutSection = document.querySelector(".para");
+let buttonContact = document.querySelector(".contact");
+let contactSection = document.querySelector(".footer");
+let homeSection = document.querySelector(".home");
+let paragraphSection = document.querySelector(".title");
+let homeSelect = document.querySelector(".homesection");
+let gymSelect = document.querySelector(".gym");
+
+let quizCategory1 = 0;
+let quizCategory2 = 0;
 
 let questionsIndex = 0;
 
@@ -35,7 +46,7 @@ let questions = [
     answer2: "The body achieves what the mind believes - Unknown",
   },
   {
-    question: "Which of the following would you be most interested in trying?",
+    question: "which of the following would you be most interested in trying?",
     answer1: "Mobility, flexibility and alternative workouts",
     answer2: "Endurance & weight lifting",
   },
@@ -62,29 +73,47 @@ function confirmAnswer(answer) {
   let usersAnswer = questions[questionsIndex];
 
   if (answer === usersAnswer.answer1) {
-    questionsIndex++;
-    startQuestions();
-  } else if (answer !== usersAnswer.answer1);
+    quizCategory1++;
+  } else if (answer === usersAnswer.answer2) {
+    quizCategory2++;
+  }
+  questionsIndex++;
+  startQuestions();
 }
 
-answerBtn.addEventListener("click", (event) => {
-  const answer = event.target.innerText;
-  confirmAnswer(answer);
+for (let i = 0; i < answerBtn.length; i++) {
+  answerBtn[i].addEventListener("click", (event) => {
+    const answer = event.target.innerText;
+    confirmAnswer(answer);
+  });
+}
+
+function endQuestions() {
+  questionsArea.classList.add("is-hidden");
+  mainSection.classList.add("is-hidden");
+
+  if (quizCategory1 >= 4) {
+    homeSelect.classList.remove("is-hidden");
+  } else {
+    gymSelect.classList.remove("is-hidden");
+  }
+}
+
+//    added nav bar button eventlistener to about-home-contact
+buttonAbout.addEventListener("click", function () {
+  mainSection.classList.add("is-hidden");
+  aboutSection.classList.remove("is-hidden");
+  questionsArea.classList.add("is-hidden");
 });
 
-const options = {
-  method: "GET",
-  headers: {
-    "X-RapidAPI-Key": "dfbd975756msh5c34e78571a6059p156249jsne62ed8b440fa",
-    "X-RapidAPI-Host": "exercisedb.p.rapidapi.com",
-  },
-};
+buttonContact.addEventListener("click", function () {
+  mainSection.classList.add("is-hidden");
+  contactSection.classList.remove("is-hidden");
+});
 
-fetch("https://exercisedb.p.rapidapi.com/exercises", options)
-  .then((response) => response.json())
-  .then((response) => console.log(response))
-  .catch((err) => console.error(err));
-
-  function showExercise(){
-    
-  }
+buttonHome.addEventListener("click", function () {
+  mainSection.classList.remove("is-hidden");
+});
+buttonHome.addEventListener("click", function () {
+  paragraphSection.classList.remove("is-hidden");
+});
