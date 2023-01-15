@@ -4,13 +4,18 @@ let questionsArea = document.querySelector(".questions-box")
 let questionsText = document.querySelector(".questions-area")
 let answerTextOne = document.querySelector(".answer-area1")
 let answerTextTwo = document.querySelector(".answer-area2")
-let answerBtn = document.querySelector(".answer")
+let answerBtn = document.querySelectorAll(".answer")
 let buttonAbout = document.querySelector(".about")
 let aboutSection= document.querySelector(".para")
 let buttonContact = document.querySelector(".contact")
 let contactSection= document.querySelector(".footer")
 let homeSection= document.querySelector(".home")
 let paragraphSection= document.querySelector(".title")
+let homeSelect= document.querySelector(".homesection")
+let gymSelect= document.querySelector(".gym")
+
+let quizCategory1= 0;
+let quizCategory2= 0;
 
 let questionsIndex = 0;
 
@@ -69,44 +74,45 @@ function confirmAnswer(answer){
     let usersAnswer = questions[questionsIndex];
 
     if(answer === usersAnswer.answer1){
-        questionsIndex++;
-        startQuestions()
+        quizCategory1++;
+            
     }
-    else if (answer !== usersAnswer.answer1);
+    else if (answer === usersAnswer.answer2){
+        quizCategory2++;
+       
+    };
+     questionsIndex++;
+        startQuestions()
 }
 
 
-
-answerBtn.addEventListener("click", (event) => {
-const answer = event.target.innerText;
-confirmAnswer(answer);
-
+for (let i = 0; i < answerBtn.length; i++) {
+    answerBtn[i].addEventListener("click", (event) => {
+        const answer = event.target.innerText;
+        confirmAnswer(answer);
+        
+        }
+        )  
 }
-)
 
 
-// function addCity(){
-//   fetch('https://www.google.com/maps/search/?AIzaSyD7rYxTk62ICY-DiZAbLMVTzJZgPiWQ0YI=1')
-//     .then(function (response) {
-//       return response.json();
-//       console.log("123");
-//     })
+function endQuestions() {
+
+    questionsArea.classList.add("is-hidden")
+    mainSection.classList.add("is-hidden")
     
-  // };
-      const options = {
-          method: 'GET',
-          headers: {
-              'X-RapidAPI-Key': 'dfbd975756msh5c34e78571a6059p156249jsne62ed8b440fa',
-              'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
-          }
-      };
-      
-      fetch('https://exercisedb.p.rapidapi.com/exercises', options)
-          .then(response => response.json())
-          .then(response => console.log(response))
-          .catch(err => console.error(err));
 
-   // added nav bar button eventlistener to about-home-contact
+    if (quizCategory1 >= 4){
+        homeSelect.classList.remove("is-hidden")
+
+    }
+    else {
+        gymSelect.classList.remove("is-hidden")
+    }
+
+}
+
+//    added nav bar button eventlistener to about-home-contact
            buttonAbout.addEventListener('click', function () {
            mainSection.classList.add("is-hidden") 
            aboutSection.classList.remove("is-hidden")
