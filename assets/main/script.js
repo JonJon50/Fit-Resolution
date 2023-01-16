@@ -1,18 +1,28 @@
+//buttons
 let startBtn = document.querySelector(".start-btn")
-let mainSection = document.querySelector(".section")
+let answerBtn = document.querySelectorAll(".answer")
+let aboutBtn = document.querySelector(".about")
+let homeBtn= document.querySelector(".home")
+let contactBtn = document.querySelector(".contact")
+//buttons
+
+//sections
+let aboutSection = document.querySelector(".about-us")
+let mainSection = document.querySelector(".main-section")
+let questionsSection = document.querySelector(".questions-area")
+let contactSection= document.querySelector(".contact-section")
 let questionsArea = document.querySelector(".questions-box")
-let questionsText = document.querySelector(".questions-area")
+
+
+
 let answerTextOne = document.querySelector(".answer-area1")
 let answerTextTwo = document.querySelector(".answer-area2")
-let answerBtn = document.querySelectorAll(".answer")
-let buttonAbout = document.querySelector(".about")
-let aboutSection= document.querySelector(".para")
-let buttonContact = document.querySelector(".contact")
-let contactSection= document.querySelector(".footer")
-let homeSection= document.querySelector(".home")
 let paragraphSection= document.querySelector(".title")
-let homeSelect= document.querySelector(".homesection")
+
+let homeSelect= document.querySelector(".homeworkout")
 let gymSelect= document.querySelector(".gym")
+
+
 
 let quizCategory1= 0;
 let quizCategory2= 0;
@@ -46,9 +56,9 @@ let questions = [
     answer2: "The body achieves what the mind believes - Unknown",
     },
     {
-question: "which of the following would you be most interested in trying?",
-answer1: "Mobility, flexibility and alternative workouts",
-answer2: "Endurance & weight lifting",
+    question: "which of the following would you be most interested in trying?",
+    answer1: "Mobility, flexibility and alternative workouts",
+    answer2: "Endurance & weight lifting",
     }
 ];
 
@@ -64,7 +74,7 @@ function startQuestions (){
 if(questionsIndex === questions.length){
     endQuestions()
 } else {
-    questionsText.innerHTML = questions[questionsIndex].question;
+    questionsSection.innerHTML = questions[questionsIndex].question;
     answerTextOne.innerHTML = questions[questionsIndex].answer1;
     answerTextTwo.innerHTML = questions[questionsIndex].answer2;
 }
@@ -113,23 +123,31 @@ function endQuestions() {
 }
 
 //    added nav bar button eventlistener to about-home-contact
-           buttonAbout.addEventListener('click', function () {
-           mainSection.classList.add("is-hidden") 
+           aboutBtn.addEventListener('click', function () {
            aboutSection.classList.remove("is-hidden")
-           questionsArea.classList.add("is-hidden") 
+            mainSection.classList.add("is-hidden") 
+           questionsArea.classList.add("is-hidden")
+           homeSelect.classList.add("is-hidden")
+           gymSelect.classList.add("is-hidden")
       })
 
-           buttonContact.addEventListener('click', function () {
-           mainSection.classList.add("is-hidden") 
-           contactSection.classList.remove("is-hidden") 
+           contactBtn.addEventListener('click', function () {
+           aboutSection.classList.add("is-hidden") 
+           mainSection.classList.add("is-hidden")
+           questionsArea.classList.add("is-hidden")
+           homeSelect.classList.add("is-hidden")
+           gymSelect.classList.add("is-hidden")
+            
       })
 
-           buttonHome.addEventListener('click', function () {
-           mainSection.classList.remove("is-hidden") 
+           homeBtn.addEventListener('click', function () {
+            aboutSection.classList.add("is-hidden") 
+            questionsArea.classList.add("is-hidden") 
+            mainSection.classList.remove("is-hidden")
+            homeSelect.classList.add("is-hidden")
+            gymSelect.classList.add("is-hidden") 
       })   
-           buttonHome.addEventListener('click', function () {
-           paragraphSection.classList.remove("is-hidden") 
-      })   
+
 
 
      
