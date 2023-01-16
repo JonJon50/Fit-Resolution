@@ -1,0 +1,13 @@
+.hero {
+  background-image: url(https://img.freepik.com/free-photo/front-view-man-tank-top-holding-weights-with-copy-space_23-2148700670.jpg?w=1060&t=st=1673899540~exp=1673900140~hmac=847ce1f90b5835201096af765b0100dfe9b095a45a0865f4b17c0ce4529f6a2e);
+  max-width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#map {
+  height: 500px;
+  width: 600px;
+  border-radius: 4px;
+}
