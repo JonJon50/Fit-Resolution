@@ -1,0 +1,8 @@
+.hero {
+    background-image: url();
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
