@@ -4,6 +4,8 @@ let answerBtn = document.querySelectorAll(".answer")
 let aboutBtn = document.querySelector(".about")
 let homeBtn= document.querySelector(".home")
 let contactBtn = document.querySelector(".contact")
+let gymBtn = document.querySelector(".gymbtn")
+let workoutBtn = document.querySelector(".workoutbtn")
 //buttons
 
 //sections
@@ -19,8 +21,8 @@ let answerTextOne = document.querySelector(".answer-area1")
 let answerTextTwo = document.querySelector(".answer-area2")
 let paragraphSection= document.querySelector(".title")
 
-let homeSelect= document.querySelector(".homeworkout")
-let gymSelect= document.querySelector(".gym")
+let homeSelect = document.querySelector(".homeworkout")
+let gymSelect = document.querySelector(".gym")
 
 
 
@@ -121,6 +123,18 @@ function endQuestions() {
     }
 
 }
+
+gymBtn.addEventListener('click', function (){
+    window.location.href="maps.html"
+startQuestions()
+})
+
+workoutBtn.addEventListener('click', function (){
+    window.location.href="exercise.html"
+startQuestions()
+})
+
+
 
 //    added nav bar button eventlistener to about-home-contact
            aboutBtn.addEventListener('click', function () {
