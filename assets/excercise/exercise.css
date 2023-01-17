@@ -1,8 +1,11 @@
 .hero {
-    background-image: url(https://img.freepik.com/free-photo/graceful-beautiful-young-female-athlete-practicing-studio-monochrome-blue-portrait_155003-36179.jpg?w=996&t=st=1673899414~exp=1673900014~hmac=d2210415b172f861fe7b1d7f321b72b45c86f3d897f1504f1caceebc91c71e1e);
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: url(https://img.freepik.com/free-photo/front-view-man-tank-top-holding-weights-with-copy[…]ce1f90b5835201096af765b0100dfe9b095a45a0865f4b17c0ce4529f6a2e);
+  max-width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hide {
+  display: none;
 }
