@@ -26,7 +26,7 @@ function cb1() {
           let cardioCard = `
 <div class="card">
   <div class="card-image">
-    <figure class="image is-4by3">
+    <figure class="image is-64x64 is-half">
       <div> 
       <img src= ${imgEl.src} ${imgEl.alt} />
 </div>
