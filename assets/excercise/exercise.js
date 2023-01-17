@@ -20,6 +20,7 @@ function cb1() {
       for (let i = 0; i < response.length; i++) {
         if (response[i].equipment === "body weight") {
           var cardDiv = document.createElement("div");
+          cardDiv.setAttribute("class", "column is-one-third");
           let imgEl = document.createElement("img");
           imgEl.src = response[i].gifUrl;
           imgEl.alt = "";
@@ -44,10 +45,8 @@ function cb1() {
 </div>`;
           cardDiv.innerHTML = cardioCard;
           document.querySelector("#gifDiv").appendChild(cardDiv);
-          // gifDiv.append(cardioCard);
         }
       }
-      // img1El.src = response[0].gifUrl;
     })
     .catch((err) => console.error(err));
 }
