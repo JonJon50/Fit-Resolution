@@ -27,6 +27,7 @@
 ![Photo3](./assets/images/Exercise3.png)
 ![Photo4](./assets/images/Cardio.png)
 
+
 ## <h2 id="installation"> Installation </h2>
 
 Go to the internet, type in Fit Resolution and follow the easy to navigate instruction. That's it!
