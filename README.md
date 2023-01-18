@@ -24,7 +24,9 @@
 
 ![Photo1](./assets/images/main1.png)
 ![Photo2](./assets/images/maps2.png)
-![Photo2](./assets/images/Exercise3.png)
+![Photo3](./assets/images/Exercise3.png)
+![Photo4](./assets/images/Cardio.png)
+
 
 ## <h2 id="installation"> Installation </h2>
 
