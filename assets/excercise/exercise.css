@@ -1,10 +1,17 @@
 .hero {
-  background-image: url(https://img.freepik.com/free-photo/front-view-man-tank-top-holding-weights-with-copy[…]ce1f90b5835201096af765b0100dfe9b095a45a0865f4b17c0ce4529f6a2e);
+  background-image: url(https://img.freepik.com/free-photo/abs-training-beautiful-young-female-athlete-practicing-studio-monochrome-blue-portrait_155003-36181.jpg?w=1800&t=st=1673971794~exp=1673972394~hmac=7d8c1696616e459651447f3b2ffb1a57b2865cb66d327130c06aee5beb455ff8);
   max-width: 100%;
   height: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.logo {
+  color: rgb(255, 255, 255);
+  font-family: monospace;
+  margin: 0px 5px;
+  border-top-left-radius: 100px;
 }
 .hide {
   display: none;
