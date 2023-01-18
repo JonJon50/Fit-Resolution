@@ -64,4 +64,6 @@ document.querySelector("#citySearch").addEventListener("click", (e) => {
   let city = document.getElementById("city").value;
   console.log(city);
   getLocation(city);
+  // Save user input to local storage
+  window.localStorage.setItem("City", `${city}`);
 });
