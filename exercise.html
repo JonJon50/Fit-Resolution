@@ -11,105 +11,119 @@
     <title>Home Workouts</title>
 
   </head>
-
-<body class="hero is-info is-fullheight is-responsive">
-
-    <nav class="navbar is-justify-content-space-between">
-        <h1 class="title mt-5 ml-6"><span class="has-text-primary">FIT </span>Resolution</h1>
-            <ul class="nav-btn is-flex m-3">
-               <li class="home mt-5 mr-4 button is-rounded is-small has-text-grey">
-                 <a href="index.html">HOME</a>
-              </li>
+  <nav class="hero-head navbar">
+    <div class="container is-flex">
+        <h1 class="title column is-size-5-mobile is-responsive mt-3"><span class="has-text-primary">FIT </span>Resolution</h1>
+            <ul class="nav-btn">
+                <li class="home mt-5 mr-4 button is-rounded is-small has-text-grey is-responsive"><a href="index.html">HOME</a></li> 
+            </ul>
+        </div>
     </nav>
 
-    <main>  
+             
+<body class="hero is-info is-fullheight is-responsive">
+
+    
+
+    <main class="hero-body">  
       
-      <div id="gifDiv" class=" is-flex is-flex-wrap-wrap " > 
-       
-        <div id="button-div" class="is-flex is-flex-wrap-wrap"> 
-        <div class="card-image">
-          <button id="cardio-btn"> 
-            <figure class="image is-128x128 is-half">
-            <img src="https://assets.sweat.com/html_body_blocks/images/000/017/518/original/At_Home_Cardio_en6f52ae44b2ef7a937f91b482ce7798fa.jpg?1589784748" alt="Placeholder image">
-            <p>Cardio</p>
-          </button>
+      <div id="gifDiv" class="columns is-flex is-flex-wrap-wrap" > 
+       </div>
+
+        <div id="button-div" class="columns is-3 is-flex is-flex-wrap-wrap"> 
+          
+          <div class="column is-half-mobile is-one-third-desktop is-one-third-fullhd is-one-third-tablet is-one-third-widescreen">
+          <div class="">
+          <button id="cardio-btn" class="style"> 
+            <figure class="image is-256x256 p-6">
+            <img src="./assets/images/cardio.jpg" alt="Placeholder image">
+            <!-- <p>Cardio</p> -->
           </figure>
+          </button>
+          
           
         </div>
-      
+      </div>
 
       
-        <div class="card-image button-div">
-          <button id="waist-btn"> 
-            <figure class="image is-128x128 is-half">
-            <img src="https://images.pexels.com/photos/866019/pexels-photo-866019.jpeg" alt="Placeholder image">
-            <p>Waist</p>
-          </button>
+      <div class="column is-half-mobile is-one-third-desktop is-one-third-fullhd is-one-third-tablet is-one-third-widescreen">
+        <div class="">
+          <button id="waist-btn" class="style"> 
+            <figure class="image is-256x256 p-6">
+            <img src="./assets/images/abs.jpg" alt="Placeholder image">
+            <!-- <p>Waist</p> -->
           </figure>
+          </button>
           
+          </div>
         </div>
     
 
       
-        <div class="card-image button-div">
-          <button id="chest-btn"> 
-            <figure class="image is-128x128 is-half">
-            <img src="https://images.pexels.com/photos/3823063/pexels-photo-3823063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Placeholder image">
-            <p>Chest</p>
-          </button>
+        <div class="column is-half-mobile is-one-third-desktop is-one-third-fullhd is-one-third-tablet is-one-third-widescreen">
+          <div class="">
+          <button id="chest-btn" class="style"> 
+            <figure class="image is-256x256 p-6">
+            <img src="./assets/images/chest.jpg" alt="Placeholder image">
+            <!-- <p>Chest</p> -->
           </figure>
+          </button>
+          
+          </div>
         </div>
       
 
       
-        <div class="card-image button-div">
-          <button id="back-btn"> 
-            <figure class="image is-128x128 is-half">
-            <img src="https://images.unsplash.com/photo-1517637382994-f02da38c6728?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Placeholder image">
-            <p>Back</p>
-          </figure>
-        </button>
-        </div>
-      
-
-      
-        <div class="card-image button-div">
-          <button id="legs-btn"> 
-            <figure class="image is-128x128 is-half">
-            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Placeholder image">
-            <p>Legs</p>
+        <div class="column is-half-mobile is-one-third-desktop">
+          <div class="">
+          <button id="back-btn" class="style"> 
+            <figure class="image is-256x256 p-6">
+            <img src="./assets/images/back.jpg" alt="Placeholder image">
+            <!-- <p>Back</p> -->
+            </figure>
           </button>
-          </figure>
-        </div>
-      
-
-      
-        <div class="card-image button-div">
-          <button id="arms-btn"> 
-            <figure class="image is-128x128 is-half">
-            <img src="https://images.pexels.com/photos/869243/pexels-photo-869243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Placeholder image">
-            <p>Arms</p>
-          </button>
-          </figure>
+          
         </div>
       </div>
-    </div>
+      
 
+      
+        <div class="column is-half-mobile is-one-third-desktop">
+          <div class="">
+          <button id="arms-btn" class="style"> 
+            <figure class="image is-256x256 p-6">
+            <img src="./assets/images/arm.jpg">
+            
+          </figure>
+          </button>
+          
+        </div>
+      </div>
+      
+
+      
+        <div class="column is-half-mobile is-one-third-desktop">
+          <div class="">
+          <button id="legs-btn" class="style "> 
+            <figure class="is-256x256 p-6">
+            <img src="./assets/images/legs.jpg" alt="Placeholder image">
+            
+          </figure>
+          </button>
+          
+        </div>
+      </div>
     
 </main>
 
 
-       <footer class="hero-foot p-0">
-         <div  class="content has-text-right">
-          <p>
-            <a href="https://github.com/JonJon50/Fit-Resolution"
-           ><i class="fa-brands fa-github"></i>
-
-            ></a>
-            <strong>Created By Slow Down 4 What &#169;</strong>
-          </p>
-        </div>
-      </footer>
+<footer class="hero-foot">
+  <div class="content has-text-right">
+      <a href="https://github.com/JonJon50/Fit-Resolution">
+        <i class="button is-small fa-brands fa-github is-primary is-responsive"><span class="logo">Github</span></i>
+      </a>
+  </div>
+</footer>
 
 <script src="https://kit.fontawesome.com/b754e15a00.js" crossorigin="anonymous"></script>
 <script src="./assets/excercise/exercise.js"></script>   

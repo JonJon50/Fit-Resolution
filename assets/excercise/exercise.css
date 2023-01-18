@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(https://img.freepik.com/free-photo/abs-training-beautiful-young-female-athlete-practicing-studio-monochrome-blue-portrait_155003-36181.jpg?w=1800&t=st=1673971794~exp=1673972394~hmac=7d8c1696616e459651447f3b2ffb1a57b2865cb66d327130c06aee5beb455ff8);
+  background-image: url(https://htmlcolors.com/gradients-images/41-light-green-gradient.jpg);
   max-width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -15,4 +15,18 @@
 }
 .hide {
   display: none;
+}
+
+.style{
+  border-radius: 200px;
+  border-style: none;
+  background-color: transparent;
+}
+
+img{ 
+  border-radius: 180px;
+}  
+
+.box {
+  background-color: rgba(0, 0, 0, 0.298);
 }

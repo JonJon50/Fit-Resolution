@@ -9,25 +9,30 @@
 
     <title>Find Your Gym</title>
 
+</head> 
+
 </head>
+
+<nav class="hero-head navbar">
+  <div class="container is-flex">
+      <h1 class="title column is-size-5-mobile is-responsive mt-3"><span class="has-text-primary">FIT </span>Resolution</h1>
+          <ul class="nav-btn">
+              <li class="home mt-5 mr-4 button is-rounded is-small has-text-grey is-responsive"><a href="index.html">HOME</a></li> 
+          </ul>
+      </div>
+  </nav>
+
   <body class="hero is-info is-fullheight is-responsive">
-    <nav class="navbar is-justify-content-space-between">
-      <h1 class="title mt-5 ml-6">
-        <span class="has-text-primary">FIT </span>Resolution
-      </h1>
-      <ul class="nav-btn is-flex m-3">
-        <li class="home mt-5 mr-4 button is-rounded is-small has-text-grey">
-          <a href="index.html">HOME</a>
-        </li>
-      </ul>
-    </nav>
+   
 
 
     <section class="main-section hero-body">
       <div class="control">
         <input type="text" placeholder="Enter your city" id="city" class="is-success input mb-2"></input>
         <button id="citySearch" class="button is-fullwidth is-success is-focused mb-2">Search</button>
+        <div class="container is-responsive">
         <div id="map"></div>
+      </div>
       </div>
     </section>
 

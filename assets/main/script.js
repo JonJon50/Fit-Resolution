@@ -143,6 +143,7 @@ startQuestions()
            questionsArea.classList.add("is-hidden")
            homeSelect.classList.add("is-hidden")
            gymSelect.classList.add("is-hidden")
+           contactSection.classList.add("is-hidden")
       })
 
            contactBtn.addEventListener('click', function () {
@@ -151,7 +152,7 @@ startQuestions()
            questionsArea.classList.add("is-hidden")
            homeSelect.classList.add("is-hidden")
            gymSelect.classList.add("is-hidden")
-            
+           contactSection.classList.remove("is-hidden")
       })
 
            homeBtn.addEventListener('click', function () {
@@ -160,6 +161,7 @@ startQuestions()
             mainSection.classList.remove("is-hidden")
             homeSelect.classList.add("is-hidden")
             gymSelect.classList.add("is-hidden") 
+            contactSection.classList.add("is-hidden")
       })   
 
 

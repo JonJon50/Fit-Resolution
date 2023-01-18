@@ -20,29 +20,22 @@ function CardioWorkout() {
       for (let i = 0; i < response.length; i++) {
         if (response[i].equipment === "body weight") {
           var cardDiv = document.createElement("div");
-          cardDiv.setAttribute("class", "column is-one-third");
+          cardDiv.setAttribute("class", "column is-one-third is-half-mobile");
           let imgEl = document.createElement("img");
           imgEl.src = response[i].gifUrl;
           imgEl.alt = "";
           let cardioCard = `
-<div class="card">
-  <div class="card-image">
-    <figure class="image is-64x64 is-half">
-      <div> 
-      <img src= ${imgEl.src} ${imgEl.alt} />
-</div>
-    </figure>
-  </div>
-      <div>
-       <p>Body Part: ${response[i].bodyPart}</p>
-        <p>Name: ${response[i].name}</p>
-      </div>
-    </div>
-    <div>
-    <p>Target area: ${response[i].target}</p>
-    </div>
-  </div>
-</div>`;
+
+          <div class="column">
+          <div class="box">
+            <figure class="image is-64x64 is-half">
+              <img src= ${imgEl.src} ${imgEl.alt}/>
+            </figure>
+          
+                <p>${response[i].name}</p>
+            </div>
+          </div>`;
+
           cardDiv.innerHTML = cardioCard;
           document.querySelector("#gifDiv").appendChild(cardDiv);
         }
@@ -73,29 +66,22 @@ function WaistWorkout() {
       for (let i = 0; i < response.length; i++) {
         if (response[i].equipment === "body weight") {
           var cardDiv = document.createElement("div");
-          cardDiv.setAttribute("class", "column is-one-third");
+          cardDiv.setAttribute("class", "column is-one-third is-half-mobile");
           let imgEl = document.createElement("img");
           imgEl.src = response[i].gifUrl;
           imgEl.alt = "";
           let cardioCard = `
-<div class="card">
-  <div class="card-image">
-    <figure class="image is-64x64 is-half">
-      <div> 
-      <img src= ${imgEl.src} ${imgEl.alt} />
-</div>
-    </figure>
-  </div>
-      <div>
-       <p>Body Part: ${response[i].bodyPart}</p>
-        <p>Name: ${response[i].name}</p>
-      </div>
-    </div>
-    <div>
-    <p>Target area: ${response[i].target}</p>
-    </div>
-  </div>
-</div>`;
+
+          <div class="column">
+          <div class="box">
+            <figure class="image is-64x64 is-half">
+              <img src= ${imgEl.src} ${imgEl.alt}/>
+            </figure>
+          
+                <p>${response[i].name}</p>
+            </div>
+          </div>`;
+
           cardDiv.innerHTML = cardioCard;
           document.querySelector("#gifDiv").appendChild(cardDiv);
         }
@@ -126,29 +112,22 @@ function ChestWorkout() {
       for (let i = 0; i < response.length; i++) {
         if (response[i].equipment === "body weight") {
           var cardDiv = document.createElement("div");
-          cardDiv.setAttribute("class", "column is-one-third");
+          cardDiv.setAttribute("class", "column is-one-third is-half-mobile");
           let imgEl = document.createElement("img");
           imgEl.src = response[i].gifUrl;
           imgEl.alt = "";
           let cardioCard = `
-<div class="card">
-  <div class="card-image">
-    <figure class="image is-64x64 is-half">
-      <div> 
-      <img src= ${imgEl.src} ${imgEl.alt} />
-</div>
-    </figure>
-  </div>
-      <div>
-       <p>Body Part: ${response[i].bodyPart}</p>
-        <p>Name: ${response[i].name}</p>
-      </div>
-    </div>
-    <div>
-    <p>Target area: ${response[i].target}</p>
-    </div>
-  </div>
-</div>`;
+
+          <div class="column">
+          <div class="box">
+            <figure class="image is-64x64 is-half">
+              <img src= ${imgEl.src} ${imgEl.alt}/>
+            </figure>
+          
+                <p>${response[i].name}</p>
+            </div>
+          </div>`;
+
           cardDiv.innerHTML = cardioCard;
           document.querySelector("#gifDiv").appendChild(cardDiv);
         }
@@ -179,29 +158,22 @@ function BackWorkout() {
       for (let i = 0; i < response.length; i++) {
         if (response[i].equipment === "body weight") {
           var cardDiv = document.createElement("div");
-          cardDiv.setAttribute("class", "column is-one-third");
+          cardDiv.setAttribute("class", "column is-one-third is-half-mobile");
           let imgEl = document.createElement("img");
           imgEl.src = response[i].gifUrl;
           imgEl.alt = "";
           let cardioCard = `
-<div class="card">
-  <div class="card-image">
-    <figure class="image is-64x64 is-half">
-      <div> 
-      <img src= ${imgEl.src} ${imgEl.alt} />
-</div>
-    </figure>
-  </div>
-      <div>
-       <p>Body Part: ${response[i].bodyPart}</p>
-        <p>Name: ${response[i].name}</p>
-      </div>
-    </div>
-    <div>
-    <p>Target area: ${response[i].target}</p>
-    </div>
-  </div>
-</div>`;
+
+          <div class="column">
+          <div class="box">
+            <figure class="image is-64x64 is-half">
+              <img src= ${imgEl.src} ${imgEl.alt}/>
+            </figure>
+          
+                <p>${response[i].name}</p>
+            </div>
+          </div>`;
+
           cardDiv.innerHTML = cardioCard;
           document.querySelector("#gifDiv").appendChild(cardDiv);
         }
@@ -235,29 +207,22 @@ function LegWorkout() {
       for (let i = 0; i < response.length; i++) {
         if (response[i].equipment === "body weight") {
           var cardDiv = document.createElement("div");
-          cardDiv.setAttribute("class", "column is-one-third");
+          cardDiv.setAttribute("class", "column is-one-third is-half-mobile");
           let imgEl = document.createElement("img");
           imgEl.src = response[i].gifUrl;
           imgEl.alt = "";
           let cardioCard = `
-<div class="card">
-  <div class="card-image">
-    <figure class="image is-64x64 is-half">
-      <div> 
-      <img src= ${imgEl.src} ${imgEl.alt} />
-</div>
-    </figure>
-  </div>
-      <div>
-       <p>Body Part: ${response[i].bodyPart}</p>
-        <p>Name: ${response[i].name}</p>
-      </div>
-    </div>
-    <div>
-    <p>Target area: ${response[i].target}</p>
-    </div>
-  </div>
-</div>`;
+
+          <div class="column">
+          <div class="box">
+            <figure class="image is-64x64 is-half">
+              <img src= ${imgEl.src} ${imgEl.alt}/>
+            </figure>
+          
+                <p>${response[i].name}</p>
+            </div>
+          </div>`;
+
           cardDiv.innerHTML = cardioCard;
           document.querySelector("#gifDiv").appendChild(cardDiv);
         }
@@ -291,29 +256,22 @@ function ArmsWorkout() {
       for (let i = 0; i < response.length; i++) {
         if (response[i].equipment === "body weight") {
           var cardDiv = document.createElement("div");
-          cardDiv.setAttribute("class", "column is-one-third");
+          cardDiv.setAttribute("class", "column is-one-third is-half-mobile");
           let imgEl = document.createElement("img");
           imgEl.src = response[i].gifUrl;
           imgEl.alt = "";
           let cardioCard = `
-<div class="card">
-  <div class="card-image">
-    <figure class="image is-64x64 is-half">
-      <div> 
-      <img src= ${imgEl.src} ${imgEl.alt} />
-</div>
-    </figure>
-  </div>
-      <div>
-       <p>Body Part: ${response[i].bodyPart}</p>
-        <p>Name: ${response[i].name}</p>
-      </div>
-    </div>
-    <div>
-    <p>Target area: ${response[i].target}</p>
-    </div>
-  </div>
-</div>`;
+
+          <div class="column">
+          <div class="box">
+            <figure class="image is-64x64 is-half">
+              <img src= ${imgEl.src} ${imgEl.alt}/>
+            </figure>
+          
+                <p>${response[i].name}</p>
+            </div>
+          </div>`;
+
           cardDiv.innerHTML = cardioCard;
           document.querySelector("#gifDiv").appendChild(cardDiv);
         }
